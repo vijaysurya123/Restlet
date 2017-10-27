@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.restlet.client</groupId>
+    <artifactId>first_project</artifactId>
+    <version>1.0.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.restlet.client</groupId>
+                <artifactId>maven-plugin</artifactId>
+                <version>2.10.1</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                          <file>Transformation.postman_collection.json</file>
+                          <selectedEnvironment></selectedEnvironment>
+                          <licenseKey>M7NjOZNsJPdd7CJUSe/cTCM3SGqRPeUxA1EohQSwpXNSAg8qeua2CK6Ez3AwNETb5I0Yh68MAMoaWuWv5itL+znpvKr9xinaM2J9k65znFIOfRwE1tqZ6P0Wu/pMhcDNFQvDLdTjgfo7oRuHKSPDrg==</licenseKey>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <pluginRepositories>
+        <pluginRepository>
+           <id>restlet-public</id>
+           <name>Restlet public Release Repository</name>
+           <url>http://maven.restlet.com</url>
+       </pluginRepository>
+    </pluginRepositories>
+</project>
