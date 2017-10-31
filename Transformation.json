@@ -1,0 +1,71 @@
+{
+  "front-version": "2.10.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "description": "",
+      "id": "e46bd31b-ed19-4e94-84cc-9d843e80d0d0",
+      "lastModified": "2017-10-27T16:52:50.496+05:30",
+      "name": "Transformation"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "https://tools.ietf.org/html/rfc7231#section-4.3",
+        "name": "POST"
+      },
+      "body": {
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "path": "identity-internal-test.pearson.com/auth/json/pearson/authenticate"
+      },
+      "description": "https://identity-internal-test.pearson.com/auth/json/pearson/authenticate\n\nGenerated from a curl request: \ncurl -X POST   https://identity-internal-test.pearson.com/auth/json/pearson/authenticate   -H 'cache-control: no-cache'   -H 'content-type: application/json'   -H 'postman-token: 47b97d5a-8ddc-dd5c-b380-aac807a2e2dc'   -H 'x-openam-password: Password1'   -H 'x-openam-username: sso3'",
+      "id": "0aa33bf0-fc45-4418-a02e-b2d2e9c40620",
+      "lastModified": "2017-10-27T16:52:50.496+05:30",
+      "name": "Token Curl",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "cache-control",
+          "value": "no-cache"
+        },
+        {
+          "enabled": true,
+          "name": "content-type",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "postman-token",
+          "value": "47b97d5a-8ddc-dd5c-b380-aac807a2e2dc"
+        },
+        {
+          "enabled": true,
+          "name": "x-openam-password",
+          "value": "Password1"
+        },
+        {
+          "enabled": true,
+          "name": "x-openam-username",
+          "value": "sso3"
+        }
+      ],
+      "assertions": [],
+      "metaInfo": {
+        "ownerId": "auth0|59f08f352b6f3825e0232a7c"
+      },
+      "parentId": "e46bd31b-ed19-4e94-84cc-9d843e80d0d0"
+    }
+  ]
+}
